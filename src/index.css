@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-display: 'Barlow Condensed', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #08090b;
+    color: #e2e6ed;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+    letter-spacing: -0.01em;
+  }
+}
+
+/* Custom automotive metallic & glow utilities */
+.metallic-text {
+  background: linear-gradient(180deg, #ffffff 0%, #d1d5db 45%, #9ca3af 70%, #f3f4f6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.metallic-chrome {
+  background: linear-gradient(135deg, #374151 0%, #111827 50%, #1f2937 100%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.red-glow {
+  box-shadow: 0 0 25px rgba(225, 29, 36, 0.35);
+}
+
+.blue-glow {
+  box-shadow: 0 0 25px rgba(14, 165, 233, 0.35);
+}
+
+.subtle-scanline {
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0.15) 1px,
+    transparent 1px,
+    transparent 2px
+  );
+}
+
+/* Glassmorphism containers */
+.glass-panel {
+  background: rgba(15, 17, 23, 0.78);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-elevated {
+  background: rgba(22, 26, 35, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}

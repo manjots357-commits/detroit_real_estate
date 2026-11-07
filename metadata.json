@@ -1,0 +1,6 @@
+{
+  "name": "Detroit Complete Auto Repair",
+  "description": "Premium cinematic automotive repair, diagnostics, and maintenance platform for Detroit Complete Auto Repair on Grand River Ave, Detroit, MI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
